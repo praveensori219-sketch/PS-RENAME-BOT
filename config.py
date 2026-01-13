@@ -5,7 +5,7 @@ id_pattern = re.compile(r'^.\d+$')
 
 
 # Fetch initial admin list
-ADMIN = []  # TemporLoad admins when the bot starts
+ADMIN = [1941329810]  # TemporLoad admins when the bot starts
 
 TOKEN_VERIFY=False
 API = environ.get("API", "5a7508a173d6462e4cd4b723766b92541c389a6b") # shortlink api
@@ -17,24 +17,24 @@ USER_LIMIT_TIME = int(os.environ.get("USER_LIMIT_TIME", "1"))#enter time based o
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", " ")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "28095874")
+    API_HASH  = os.environ.get("API_HASH", "f2dad1a014381d0089d447547b2ffbba")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8510363431:AAHolEhVlQbVEz1HtmTh3F5-qRB-Hh_KlJk") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","PS RENAME-BOT")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://praveensori219_db_user:gEVt82kHE6driuBM@cluster0.0oi4naa.mongodb.net/?appName=Cluster0")
     PORT = os.environ.get("PORT", "8050")
-    OWNER = int(os.environ.get("OWNER", ""))
-    PRIVATE_USE = False #If Bot is private use set True otherwise False
+    OWNER = int(os.environ.get("OWNER", "1941329810"))
+    PRIVATE_USE = True #If Bot is private use set True otherwise False
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://files.catbox.moe/ufzpkn.jpg")
     
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', "tech_freak_tamil").split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "" ))
-    DUMB_CHANNEL = os.environ.get("DUMB_CHANNEL", "")
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', "d_emonslayer_official").split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003675785567" ))
+    DUMB_CHANNEL = os.environ.get("DUMB_CHANNEL", "-1003614285409")
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
